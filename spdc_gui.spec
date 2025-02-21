@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['spdc_GUI.py'],
+    ['spdc_GUI.py', 'serial_connection.py', 'spdc_driver_trim.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -29,8 +29,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=True,
-    icon='',
+    console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
